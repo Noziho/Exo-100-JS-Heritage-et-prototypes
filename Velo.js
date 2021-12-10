@@ -1,13 +1,18 @@
 
-const Velo = function (RayonsRoues, typeDePeinture, couleur, roues , marque) {
+class Velo extends Vehicule {
 
-    Vehicule.call(this, couleur, roues, marque, );
+    constructor(rayonsRoues, typeDePeinture, couleur, roues , marque) {
+        super(couleur, roues, marque);
+        this.rayonsRoues = rayonsRoues;
+        this.typeDePeinture = typeDePeinture;
+    }
 
-    Velo.prototype.monter = () => console.log("Je monte sur mon vélo");
+    monter() {
+        console.log("Je monte à vélo");
+    }
+
 }
 let velo = new Velo(1, "mat");
 velo.monter();
 
-Velo.prototype = Object.create(Vehicule.prototype);
-Velo.prototype.constructor = Velo;
 

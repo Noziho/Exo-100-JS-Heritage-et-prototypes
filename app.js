@@ -1,10 +1,19 @@
-const Vehicule = function (couleur, roues, marque) {
-    this.couleur = couleur;
-    this.roues = roues;
-    this.marque = marque;
+class Vehicule {
+    constructor(couleur, roues, marque) {
+        this.couleur = couleur;
+        this.roues = roues;
+        this.marque = marque;
+    }
 
-    Vehicule.prototype.demarrer = () => console.log("Le véhicule démarre");
-    Vehicule.prototype.arreter = () => console.log("Le véhicule s'arrête");
+    demarrer() {
+        console.log("ma voiture démarre")
+    }
+
+    arreter () {
+        console.log("ma voiture s'arrête")
+    }
+
+
 }
 
 
