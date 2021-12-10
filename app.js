@@ -8,9 +8,8 @@ const Vehicule = function (couleur, roues, marque) {
 }
 
 
-
-
 let monVehicule = new Vehicule("blanc", 4, 'Peugeot');
+
 monVehicule.demarrer();
 monVehicule.arreter();
 

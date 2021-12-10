@@ -1,7 +1,7 @@
 
-const Velo = function (RayonsRoues, typeDePeinture) {
+const Velo = function (RayonsRoues, typeDePeinture, couleur, roues , marque) {
 
-    Vehicule.call(this, couleur, roues, marque);
+    Vehicule.call(this, couleur, roues, marque, );
 
     Velo.prototype.monter = () => console.log("Je monte sur mon vélo");
 }
