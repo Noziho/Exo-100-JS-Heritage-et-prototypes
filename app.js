@@ -16,7 +16,6 @@ class Vehicule {
 
 }
 
-
 let monVehicule = new Vehicule("blanc", 4, 'Peugeot');
 
 monVehicule.demarrer();
